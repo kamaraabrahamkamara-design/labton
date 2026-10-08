@@ -1,0 +1,133 @@
+/* Reset & Standard Box Model Setup */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f4f6f9;
+  color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.lab-container {
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  border: 1px solid #e1e8ed;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #edf2f7;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+header h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a365d;
+}
+
+.selector-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.selector-group label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e0;
+  background-color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+select:focus {
+  border-color: #3182ce;
+}
+
+.lab-workspace {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.control-panel {
+  flex: 1;
+  min-width: 260px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.experiment-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experiment-controls.hidden {
+  display: none;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.control-group label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #4a5568;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #3182ce;
+  cursor: pointer;
+}
+
+.canvas-panel {
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f172a;
+  border-radius: 8px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+#labCanvas {
+  background-color: #0f172a;
+  border-radius: 6px;
+  display: block;
+}
